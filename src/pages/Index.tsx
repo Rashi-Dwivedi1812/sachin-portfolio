@@ -7,10 +7,12 @@ import LiveDemoSection from "@/components/LiveDemoSection";
 import SkillsSection from "@/components/SkillsSection";
 import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
+import GlobalBackground from "@/components/Globalbackground";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <GlobalBackground>
       <Navbar />
       <HeroSection />
       <AboutSection />
@@ -20,6 +22,7 @@ const Index = () => {
       <SkillsSection />
       <EducationSection />
       <ContactSection />
+      </GlobalBackground>
     </div>
   );
 };
