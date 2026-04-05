@@ -285,30 +285,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;              key={label}
-              href={href}
-              target={href?.startsWith('http') ? "_blank" : undefined}
-              rel="noopener noreferrer"
-              className="glass rounded-xl p-4 flex items-center gap-3 group hover:border-glow transition-all duration-300"
-            >
-              <Icon size={20} className="text-primary" />
-              <span className="text-foreground text-sm">{value}</span>
-            </a>
-          ))}
-        </motion.div>
-
-        <motion.p
-          className="mt-20 text-center font-mono text-sm text-muted-foreground"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-        >
-          Designed & Built by Sachin Mishra
-        </motion.p>
-      </div>
-    </section>
-  );
-};
-
 export default ContactSection;
